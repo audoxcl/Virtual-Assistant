@@ -12,16 +12,16 @@ HubSpot and Pipedrive are two well-known CRM software solutions, and Jira is one
 
 This application usses our connectors to HubSpot, Pipedrive and Jira available here:
 
-* HubSpot Connector
+* HubSpot Connector  
 https://github.com/audoxcl/Power-BI-HubSpot-Connector
-* Pipedrive Connector
+* Pipedrive Connector  
 https://github.com/audoxcl/Power-BI-Pipedrive-Connector
-* Jira Connector
+* Jira Connector  
 https://github.com/audoxcl/Power-BI-Jira-Connector
 
 ## Instructions
 
-1. Copy files to your server so you can access it via url like:
+1. Copy files to your server so you can access it via url like:  
 https://yourdomain.com/Virtual-Assistant/index.php
 2. Set the parameters in the file config.php
     1. **url_connectors:** the url where connectors are installed.
