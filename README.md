@@ -21,22 +21,22 @@ https://github.com/audoxcl/Power-BI-Jira-Connector
 
 ## Instructions
 
-1. Copy files to your server so you can access them via a url like:  
+1. Copy the files to your server so you can access them via a URL such as:  
 https://yourdomain.com/virtual-assistant/index.php
-2. Set the parameters in the file config.php
-    1. **url_connectors:** the url where connectors are installed.
-    2. **pipedrive_connector_token:** token for Pipedrive connector
-    3. **hubspot_connector_token:** token for HubSpot connector
-    4. **jira_connector_token:** token for Jira connector
-    5. **transactional_email_service:** select the email transactional service to use: sendgrid or mailchimp
-    6. **sendgrid_api_key:** sendgrid api key
-    7. **mailchimp_api_key:** mailchimp api key
-    8. **from_email:** email address from which emails are sent (i.e. info@example.com)
-    9. **from_name:** email name from which emails are sent (i.e. Virtual Assistant)
-    10. **bcc_address:** email address to which a blind carbon copy is sent
-    11. **quote_of_the_day:** service to get phrases to motivate salespeople (i.e https://zenquotes.io/api/today)
-    12. **services:** the array where you set all services for your instances
-    13. **translations:** translation to other languages. Here you can add any language you need
+2. Set the parameters in the config.php file
+    1. **url_connectors:** The url where connectors are installed.
+    2. **pipedrive_connector_token:** Token for the Pipedrive connector.
+    3. **hubspot_connector_token:** Token for the HubSpot connector.
+    4. **jira_connector_token:** Token for the Jira connector.
+    5. **transactional_email_service:** Select the transactional email service to use (e.g., SendGrid or Mailchimp).
+    6. **sendgrid_api_key:** API key for SendGrid.
+    7. **mailchimp_api_key:** API key for Mailchimp.
+    8. **from_email:** The email address from which emails are sent (e.g., info@example.com).
+    9. **from_name:** The name displayed as the sender (e.g., Virtual Assistant).
+    10. **bcc_address:** Email address to receive a blind carbon copy (BCC).
+    11. **quote_of_the_day:** Service for retrieving motivational quotes for salespeople (e.g., https://zenquotes.io/api/today).
+    12. **services:** The array where you configure all services for your instances.
+    13. **translations:** Translations for other languages. You can add any additional languages as needed.
 3. Set an http request to the Virtual Assistant url using a cron job in your own server or using an additional service like FastCron (https://www.fastcron.com/). 
 You can set the cron according when you want to receive the emails.
 
