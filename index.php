@@ -11,6 +11,11 @@ if(isset($argv)){
 	$service = $argv[1];
 }
 elseif(isset($_REQUEST)){
+	if(!in_array($_REQUEST['token'], [
+		"FREETOKEN",
+		"TOKEN1",
+		"TOKEN2",
+	])) die(json_encode(['error' => "Not authorized"]));
 	$service = $_REQUEST['service_id'];
 	if(isset($_REQUEST['api_key'])) $config['services'][$service]['crm_api_key'] = $_REQUEST['api_key'];
 }
